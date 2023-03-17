@@ -1,0 +1,40 @@
+.about{
+    background-color: invert($primaryColor, 60%);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  
+    .image{
+      flex:1 1 40rem;
+  
+      img{
+        width:100%;
+      }
+    }
+  
+    .content{
+      flex:1 1 40rem;
+  
+      span{
+        color:$secondaryColor;
+        font-size: 2.5rem;
+      }
+  
+      h3{
+        color:$black;
+        font-size: 3rem;
+        padding-top: .5rem;
+        @extend %heading;
+        //color: $primaryColor;
+      }
+  
+      p{
+        color:$text-color;
+        font-size: 1.4rem;
+        line-height: 2;
+        padding:1rem 0;
+      }
+    }
+  }
